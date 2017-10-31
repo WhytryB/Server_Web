@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+</head>
+<body>
+  <style>
+   @font-face {
+    font-family: Pompadur; /* Имя шрифта */
+    src: url(fonts/pompadur.ttf); /* Путь к файлу со шрифтом */
+   }
+   P {
+    font-family: Pompadur;
+   }
+  </style>
+<nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
+  <!-- top nav -->
+  <nav class="navbar navbar-top hidden-xs">
+    <div class="container">
+      <!-- left nav top -->
+      <ul class="nav navbar-nav ">
+          <li><a href="https://www.google.com.ua/maps/place/%D0%9F%D0%BE%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D1%83%D0%B7%D0%B2%D1%96%D0%B7,+1,+%D0%9E%D0%B4%D0%B5%D1%81%D0%B0,+%D0%9E%D0%B4%D0%B5%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/data=!4m2!3m1!1s0x40c631a21a5ea0e7:0x3b051dea2012b042?sa=X&ved=0ahUKEwir9Iy0_o7XAhXlPZoKHU4xCoEQ8gEIJTAA" target="_blank"><span class="text-white "><span class="glyphicon glyphicon-map-marker"></span> <span class="textcol">г. Одесса</span>, Польский спуск, 1</span></a></li>
+      </ul>
+      <!-- right nav top -->
+      <ul class="nav navbar-nav pull-right">
+          <li><a><span class="clr  "><span class="glyphicon glyphicon-earphone"></span> Связаться с нами: <span class="textcol">(048) </span>777-97-10</span></a></li>
+       <li><a><span class="clr  "><span class="glyphicon glyphicon-envelope"> </span> Наша почта:  <span class="textcol">office@server.odessa.ua</span> </span></a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <!-- down nav -->
+  <nav class="navbar navbar-down">
+    <div class="container">
+      <div class="flex-container">
+        <div class="navbar-header flex-item">
+            <div class="navbar-brand" > <a href="/"><span class="brnd">Server</span> </a></div>
+        </div>
+        <ul class="nav navbar-nav flex-item hidden-xs">
+          <li><a href="#">о колледже</a></li>
+          <li><a href="#">образование</a></li>
+          <li><a href="#">Для студентов</a></li>
+          <li><a href="#">Курсы</a></li>
+          <li><a href="#">Жизнь колледжа</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="nav navbar-nav flex-item hidden-xs pull-right">
+
+        </ul>
+        <!-- dropdown only moblie -->
+          <div class="dropdown visible-xs pull-right">
+            <button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#"><span class="clr"> о колледже</span></a></li>
+              <li><a href="#"><span class="clr">образование</span></a></li>
+              <li><a href="#"><span class="clr"> Для студентов</span></a></li>
+              <li><a href="#"><span class="clr"> Курсы</span></a></li>
+              <li><a href="#"><span class="clr"> Жизнь колледжа</span></a></li>
+              <li><a href="#"><span class="clr"> Контакты</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </nav>
+<!--bg img  -->
+<div class="masthead">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#bs-carousel" data-slide-to="1"></li>
+                    <li data-target="#bs-carousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item slides active">
+                        <div class="slide-1"></div>
+                            <div class="hero">
+
+                                    <h3>Стань программистом</h3>
+
+                            <button class="btn btn-hero btn-lg" role="button">Узнать Больше</button>
+                        </div>
+                    </div>
+                    <div class="item slides">
+                        <div class="slide-2"></div>
+                            <div class="hero-two">
+
+                                    <h3>Попробуй себя в дизайне</h3>
+
+                                <button class="btn btn-hero btn-lg" role="button">Узнать Больше</button>
+                            </div>
+                        </div>
+                        <div class="item slides">
+                            <div class="slide-3"></div>
+                                <div class="hero-three">
+
+
+                                        <h3>Ну или если ты дебил, то админом  </h3>
+
+                                    <button class="btn btn-hero btn-lg" role="button">Узнать Больше</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+		        </div>
+
+
+{% include 'base.html' %}
+
+{% include 'footer.html' %}
+    <!-- jQuery -->
+   <script
+			  src="https://code.jquery.com/jquery-2.2.4.js"
+			  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+			  crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
